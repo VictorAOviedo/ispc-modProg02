@@ -16,9 +16,9 @@ def buscar_dispositivos(dispositivo):
 def agregar(dispositivo):
     for diccionario in lista_dispositivos:
         if dispositivo == diccionario["nombre"]:
-            return f"El {dispositivo} ya existe."
+            return f"El dispositivo {dispositivo} ya existe."
     lista_dispositivos.append({"nombre":dispositivo, "estado": False})
-    return f"El {dispositivo} ha sido agregado exitosamente."
+    return f"El dispositivo {dispositivo} ha sido agregado exitosamente."
 
 
 def eliminar(dispositivo):
